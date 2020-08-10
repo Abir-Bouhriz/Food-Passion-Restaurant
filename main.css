@@ -42,22 +42,58 @@ a {
 	text-decoration: none;
 	margin: 15px 0;
 }
+.containerr {
+	background-color: #fff;
+	border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+  min-height: 480px; 
+  /*margin-left: 350px;*/
+}
+
+.form-container form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+  text-align: center;
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #f08902;
+  color: #000;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.form-container input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 5px;
+  width: 100%;
+}
 
 .form-container button {
 	border-radius: 20px;
 	border: 1px solid #fe9801;
 	background-color: #fe9801;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-  transition: transform 80ms ease-in;
-}
-.overlay button{
-  border-radius: 20px;
-	background-color: transparent;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -80,39 +116,6 @@ button.ghost {
 	border-color: #FFFFFF;
 }
 
-form {
-	background-color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-  text-align: center;
-}
-
-.form-container input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-  margin: 8px 0;
-  border-radius: 5px;
-  width: 100%;
-}
-
-.containerr {
-	background-color: #fff;
-	border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-  min-height: 480px;
-  
-  margin-left: 350px;
-}
-
 .form-container {
 	position: absolute;
 	top: 0;
@@ -126,16 +129,58 @@ form {
 	z-index: 2;
 }
 
-.containerr.right-panel-active .sign-in-container {
-	transform: translateX(100%);
-}
-
 .sign-up-container {
 	left: 0;
 	width: 50%;
 	opacity: 0;
 	z-index: 1;
+} 
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
 }
+
+.overlay {
+	background: #fe9801;
+	background: -webkit-linear-gradient(to right, #fdc134, #fe9801);
+	background: linear-gradient(to right, #fdc134, #fe9801);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay button{
+  border-radius: 20px;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+
+
+.containerr.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
 
 .containerr.right-panel-active .sign-up-container {
 	transform: translateX(100%);
@@ -156,36 +201,12 @@ form {
 	}
 }
 
-.overlay-container {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
-	z-index: 100;
-}
 
 .containerr.right-panel-active .overlay-container{
 	transform: translateX(-100%);
 }
 
-.overlay {
-	background: #fe9801;
-	background: -webkit-linear-gradient(to right, #fdc134, #fe9801);
-	background: linear-gradient(to right, #fdc134, #fe9801);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	color: #FFFFFF;
-	position: relative;
-	left: -100%;
-	height: 100%;
-	width: 200%;
-  	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
-}
+
 
 .containerr.right-panel-active .overlay {
   	transform: translateX(50%);
@@ -223,21 +244,6 @@ form {
 	transform: translateX(20%);
 }
 
-.social-container {
-	margin: 20px 0;
-}
-
-.social-container a {
-  border: 1px solid #f08902;
-  color: #000;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
 .open-button {
   background-color: transparent;
   border: 2px solid #e79702;
@@ -260,21 +266,19 @@ form {
   width: 100%;
 }
 button.cancel{
-  font-size: 30px;
+  position: absolute;
+  font-size: 60px;
   cursor: pointer;
-  background: #e79702;
-  color: #fff;
-  z-index: 99;
-  margin-top: 10px;
-  margin-left: 350px;
-  border-radius: 5px;
-  padding: 5px 25px;
+  color: #e79702;
+  top: -40px;
+  right: 50px;
 }
 button.cancel:hover{
-  background: #FF4B2B;
+  color: #d42405;
 }
 
 /*========End of sign-in===========*/
+ 
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -334,6 +338,7 @@ body{
 /*==========Navbar=============*/
 .bg-color{
     background: #fff;
+    line-height: 40px;
 }
 .navbar-brand img{
     width: 300px;
@@ -581,6 +586,7 @@ body{
   .product-section h2{
     font-style: italic;
     font-size: 40px;
+    font-weight: 700;
   }
   .product {
     width: 100%;
@@ -688,6 +694,122 @@ body{
        right: 0;
    }
 /*==========End of Product Section===========*/
+
+/*==========start of menu Section===========*/
+.portfolio-area{
+  padding:60px 0px;
+  background:#f1f1f1;
+}
+.portfolio-area h2{
+  text-align: center;
+  margin-bottom:40px;
+  font-size:45px;
+  color: #fe9801;
+  font-style: italic;
+  font-weight: 700;
+}
+.controls button:focus{
+  outline: none;
+}
+.single-item{
+  display: inline-block;
+  vertical-align: middle;
+  width:25%;
+  margin:-2px;
+  position: relative;
+}
+.img-thumbnail img{
+  width:100%;
+}
+.img-content{
+  position: absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background:#00000078;
+  transition: .4s;
+  cursor: pointer;
+  transform: scaleY(0);
+  transform-origin: center center;
+  opacity:0;
+  visibility: hidden;
+}
+.single-item:hover .img-content{
+  transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+.img-content h2{
+  color:#fe9801;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom:10px;
+}
+.img-content p{
+  color:#fff;
+  font-size: 18px;
+  padding:0px 25px;
+}
+
+/*Controls CSS*/
+button:focus{
+  outline: none;
+}
+.controls{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.controls button{
+  background: #000;
+  border:none;
+  color:#fff;
+  font-size:16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding:10px 23px;
+  margin-bottom: 5px;
+  transition: .4s;
+}
+.controls button:hover, button.mixitup-control-active{
+  background: #fe9801;
+  cursor:pointer;
+}
+
+/* Responsive CSS */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px){
+  .single-item{
+      width:100%;
+  }
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px){
+  .single-item{
+      width:50%;
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px){
+  .single-item{
+      width:33.33%;
+  }
+  
+}
+
+
+
+/*==========End of menu Section===========*/
+
 /*========== Team  Section===========*/
 .chef h2 {
     color: #000;
@@ -891,18 +1013,39 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*==========End of  Blog Section===========*/
+
+/*==========start of footer Section===========*/
+.icons-social{
+  padding: 5px;
+}
+.list-social{
+  text-align: center;
+  padding: 0;
+}
+.icons-social-item{
+  display: inline-block;
+}
+.icons-social-item:active{
+  transform: scale(1.1);
+}
+.icons-social-link{
+  color: #dbdbcc;
+  margin-right: 15px;
+}
+.icons-social-link:hover{
+  color: #fdc134;
+}
+.footer{
+  padding: 20px;
+  color: #dbdbcc;
+  text-align: center;
+  background: #0b0b0b;
+  margin: 0;
+  font-weight: 900;
+}
+
+/*==========End of  footer Section===========*/
 
 
 
