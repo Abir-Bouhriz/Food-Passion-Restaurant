@@ -349,6 +349,7 @@ body{
     font-weight: bold;
     color: #f8aa02;
     font-size: 20px;
+    margin-right: 30px;
 }
 .btn-group{
     color: #f8aa02;
@@ -587,6 +588,7 @@ body{
     font-style: italic;
     font-size: 40px;
     font-weight: 700;
+    color: #fff;
   }
   .product {
     width: 100%;
@@ -755,6 +757,15 @@ body{
   font-size: 18px;
   padding:0px 25px;
 }
+.img-content a {
+  display: block;
+  margin: 0 2px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+}
+ .img-content a i {
+    color: #fff; }
 
 /*Controls CSS*/
 button:focus{
@@ -811,99 +822,150 @@ button:focus{
 /*==========End of menu Section===========*/
 
 /*========== Team  Section===========*/
-.chef h2 {
-    color: #000;
-  }
-  
-  .chef .col-sm-3 {
-    padding: 0;
-  }
-  
-  .chef .card > a {
-    display: block;
-  }
-  
-  .chef .card img {
+.team-area{
+  padding:60px 0px;
+  background: #fff;
+}
+.team-area h2{
+  text-align: center;
+  margin-bottom:40px;
+  font-size:45px;
+  color: #fe9801;
+  font-style: italic;
+  font-weight: 700;
+}
+  .team-img img{
     width: 100%;
+    height: 100%;
   }
   
-  .chef .card h4 {
-    color: #fff;
+  .heading-title {
+    margin-bottom: 100px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  .p-top-30 {
+    padding-top: 30px;
+  }
+  .half-txt {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #d3cdcd;
+  }
+  .text-uppercase {
     text-transform: uppercase;
   }
   
-  .chef .card p {
-    font-size: 11px;
-    color: #fff;
-    opacity: .75;
-    margin: 0;
-    padding: 0 35px;
+  .team-member,
+  .team-member .team-img {
+    position: relative;
+  }
+  .team-member {
+    overflow: hidden;
+  }
+  .team-member,
+  .team-member .team-img {
+    position: relative;
   }
   
-  .chef .card .social-nav {
-    margin-bottom: 45px;
-  }
-  
-  .chef .card .social-nav a {
-    color: #fff;
-    font-size: 16px;
-    margin: 0 4px;
-  }
-  
-  .chef .card .social-nav a:hover {
-    opacity: .75;
-  }
-  
-  .chef .card:hover .chef-over {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .chef .card:hover .card-title-wrap {
-    background-color: #fe9801;
-  }
-  
-  .chef .card:hover .card-title-wrap .card-title,
-  .chef .card:hover .card-title-wrap .card-text {
-    color: #fff;
-  }
-  
-  .chef .chef-over {
-    padding-top: 45px;
+  .team-hover {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  .chef .card-title-wrap {
-    padding: 15px 25px;
-    position: relative;
-    z-index: 9;
-    background-color: #fff;
-  }
-  
-  .chef .card-title-wrap .card-title,
-  .chef .card-title-wrap .card-text {
-      display: block;
+    bottom: 0;
+    right: 0;
     margin: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .team-member:hover .team-hover .desk {
+    top: 35%;
+  }
+  .team-member:hover .team-hover,
+  .team-member:hover .team-hover .desk,
+  .team-member:hover .team-hover .s-link {
+    opacity: 1;
+  }
+  .team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+  }
+  .desk,
+  .desk h4,
+  .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+  }
+  .team-member:hover .team-hover .s-link {
+    bottom: 10%;
+  }
+  .team-member:hover .team-hover,
+  .team-member:hover .team-hover .desk,
+  .team-member:hover .team-hover .s-link {
+    opacity: 1;
+  }
+  .team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+  }
+  .desk,
+  .desk h4,
+  .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+  }
+  .team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px;
+  }
+  .team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  .team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+  }
+  .team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
   }
   
-  .chef .card-title-wrap .card-title {
-    font-size: 24px;
-    color: #000;
-  }
-  
-  .chef .card-title-wrap .card-text {
-    font-size: 18px;
-    color: #000;
-  }
 /*==========End of  Team  Section===========*/
 /*==========Subscription Section===========*/
 #subscribe{
@@ -930,6 +992,9 @@ button:focus{
 }
 /*==========End of  Subscription Section===========*/
 /*==========Blog Section===========*/
+.blog-section{
+  background: #f1f1f1;
+}
 .blog-start{
   overflow: hidden;
   width: 100%;
