@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 /*========start of sign-in===========*/
 .wrap {
@@ -512,71 +513,9 @@ body{
 	color:#fff;
 	border-color:transparent;
 }
-/*========== Variety Section===========*/
-.variety{
-    padding-bottom: 40px;
-}
-.variety .card{
-    border: 0;
-    padding: 0 30px;
-    margin-bottom: 60px;
-    position: relative;
-    background: transparent;
-}
-.variety .card-img{
-    width: calc(100% + 60px);
-    margin-left:-30px;
-    overflow: hidden;
-    z-index: 9;
-    border-radius: 0;
-}
-.variety .card-img img{
-    max-width: 100%;
-    transition: all 0.3s ease-in-out;
-}
-.variety .card-body{
-    z-index: 10;
-    background: #ff9b04a6;
-    border-top:4px solid #f08902;
-    padding: 30px;
-    box-shadow: 0px 2px 15px rgba(241, 159,5, 0.5 );
-    margin-top: -60px;
-    transition: 0.3s;
-}
-.variety .card-title{
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.variety .card-title a{
-    color: #000;
-    transition: 0.3s;
-}
-.variety .card-text{
-    color: #000;
-}
-.variety .read-more a{
-    color: #000;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    transition: 0.3s;
-}
-.variety .read-more a:hover{
-    color: #854101;
-}
 
-.variety .card:hover img{
-    transform: scale(1.1);
 
-}
-.variety .card:hover .card-body{
-    border-color: #fdc134;
-}
-.variety .card:hover  .card-body .card-title a{
-    color: #854101;
-}
-/*==========End of Variety Section===========*/
+
 /*==========Product  Section===========*/
 .bg-img{
     background:#000;
@@ -758,14 +697,14 @@ body{
   padding:0px 25px;
 }
 .img-content a {
-  display: block;
   margin: 0 2px;
   width: 60px;
   height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.5); 
 }
  .img-content a i {
-    color: #fff; }
+    color: #fff; 
+}
 
 /*Controls CSS*/
 button:focus{
@@ -993,90 +932,84 @@ button:focus{
 /*==========End of  Subscription Section===========*/
 /*==========Blog Section===========*/
 .blog-section{
-  background: #f1f1f1;
+  background:#f1f1f1;
+  min-height: 100vh;
 }
-.blog-start{
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  z-index:0;
-}
-@media (min-width: 768px){
-  .blog-start{
-    margin-bottom: 30px;
-  }
-}
-.blog-start .img, .blog-start .text{
-  width: 50%;
-}
-@media (max-width: 992px){
-  .blog-start .img, .blog-start .text{
-    width: 100%;
-  }
-}
-@media(max-width: 768px){
-  .blog-start .img{
-    height: 300px;
-  }
-}
-.blog-start .text{
-  position:relative;
-  margin: 0 auto;
-  z-index: 0;
-}
-.blog-start .text .heading{
-  font-size: 22px;
-  margin-bottom: 0;
-  font-weight: bold;
+.blog-section h2{
+  text-align: center;
+  margin-bottom:40px;
+  font-size:45px;
+  color: #fe9801;
   font-style: italic;
+  font-weight: 700;
+  padding-top: 35px;
+}
+.event {
+	position:relative;
+	margin:15px 0px;
 }
 
-.blog-start .text .heading a{
-  color: #000;
-}
-.blog-start .text .heading a:hover,
-.blog-start .text .heading a:focus,
-.blog-start .text .heading a:active{
-  color:#e79702;
-}
-.blog-start .des p i{
-  padding-right: 10px;
-}
-.blog-start .btn-custom{
-  color: #e79702;
-  font-style: italic;
-  font-weight: bold;
-}
-.blog-start .btn-custom i{
-  font-size: 12px;
-}
-/*=======Booking==========*/
-.make-reservation{
-  width: 100%;
-  background: rgba(231,151,2,0.5);
-}
-.make-reservation .form-group label{
-  font-weight: bold;
-  color: #000;
-}
-@media (max-width: 768px){
-  .make-reservation .form-group .select-wrap{
-    position: relative;
-  }
-}
-@media(max-width:768px){
-  .make-reservation .form-group .btn-book{
-    width: 100%;
-    display: block;
-  }
-}
-.btn-book{
-  display: inline-block;
-  vertical-align: middle;
-  color:#fff!important;
-  background: #000!important;
+.event .event-img {
+	position:absolute;
+	left:0;
+	top:0;
+	width: 160px;
 }
 
+.event .event-img img {
+	width:100%;
+}
+
+.event .event-day {
+	position: absolute;
+	top: 0;
+	width: 60px;
+	height: 60px;
+	background: #f36700;
+	text-align: center;
+}
+
+.event .event-day span {
+	color: #FFF;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	font-weight: 700;
+}
+
+.event  .event-day:after , .event  .event-day:before{
+	content:"";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	position:absolute;
+	bottom:-20px;
+}
+
+.event  .event-day:before {
+	left:0;
+	border-width: 20px 60px 0 0;
+	border-color: #f36500 transparent transparent;
+}
+
+.event  .event-day:after {
+	right:0;
+	border-width: 0 60px 20px 0;
+	border-color: transparent #f36500 transparent;
+}
+
+.event .event-content {
+	min-height: 160px;
+	padding-left: 175px;
+}
+
+.event .event-content h3 {
+	margin-top:0px;
+}
 
 /*==========End of  Blog Section===========*/
 
