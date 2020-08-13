@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Restaurant HTML Template</title>
+		<title>Blog Section</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
@@ -20,6 +20,8 @@
 
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/main.css"/>
@@ -34,80 +36,37 @@
     </head>
 	<body>
 
-		<!-- Header -->
-		<header id="header">
-
-			<!-- Top nav -->
-			<div id="top-nav">
-				<div class="container">
-
-				<!-- logo -->
-				<div class="logo">
-					<a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-				</div>
-				<!-- logo -->
-
-				<!-- Mobile toggle -->
-				<button class="navbar-toggle">
-					<span></span>
-				</button>
-				<!-- Mobile toggle -->
-
-				<!-- social links -->
-				<ul class="social-nav">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-				</ul>
-				<!-- /social links -->
-
-				</div>
-			</div>
-			<!-- /Top nav -->
-
-			<!-- Bottom nav -->
-			<div id="bottom-nav">
-				<div class="container">
-				<nav id="nav">
-
-					<!-- nav -->
-					<ul class="main-nav nav navbar-nav">
-						<li><a href="index.html#home">Home</a></li>
-						<li><a href="index.html#about">About</a></li>
-						<li><a href="index.html#menu">Menu</a></li>
-						<li><a href="index.html#reservation">Reservation</a></li>
-						<li><a href="index.html#gallery">Gallery</a></li>
-						<li><a href="index.html#events">Events</a></li>
-						<li><a href="index.html#contact">Contact</a></li>
-					</ul>
-					<!-- /nav -->
-
-					<!-- button nav -->
-					<ul class="cta-nav">
-						<li><a href="#" class="main-button">Reserve</a></li>
-					</ul>
-					<!-- button nav -->
-
-					<!-- contact nav -->
-					<ul class="contact-nav nav navbar-nav">
-						<li><a href="#"><i class="fa fa-phone"></i> 045-548-14-97</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 3685 Granville Lane</a></li>
-					</ul>
-					<!-- contact nav -->
-
-				</nav>
-				</div>
-			</div>
-			<!-- /Bottom nav -->
+		<nav>
+			<div class="menu-icon">
+	  <span class="fas fa-bars"></span></div>
+	  <div class="logo">
+	  CodingNepal</div>
+	  <div class="nav-items">
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">About</a></li>
+	  <li><a href="#">Blogs</a></li>
+	  <li><a href="#">Contact</a></li>
+	  <li><a href="#">Feedback</a></li>
+	  </div>
+	  <div class="search-icon">
+	  <span class="fas fa-search"></span></div>
+	  <div class="cancel-icon">
+	  <span class="fas fa-times"></span></div>
+	  <form action="#">
+			  <input type="search" class="search-data" placeholder="Search" required>
+			  <button type="submit" class="fas fa-search"></button>
+			</form>
+	  </nav>
 
 
-		</header>
-		<!-- /Header -->
+
+
+
 
 		<div class="banner-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/background01.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(images/background01.jpg)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="container">
@@ -134,7 +93,7 @@
 
 						<!-- blog post img -->
 						<div class="blog-img">
-							<img src="./img/blog-post.jpg" alt="">
+							<img src="images/blog-post.jpg" alt="">
 							<div class="blog-day">
 								<span>08<br>July</span>
 							</div>
@@ -183,7 +142,7 @@
 								<div class="col-md-6">
 									<div class="blog-previous">
 										<a href="#">
-											<img src="./img/blog01.jpg" alt="">
+											<img src="images/blog01.jpg" alt="">
 											<div>
 												<span>Previous Post</span>
 												<h4>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</h4>
@@ -201,7 +160,7 @@
 												<span>Next Post</span>
 												<h4>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</h4>
 											</div>
-											<img src="./img/blog02.jpg" alt="">
+											<img src="images/blog02.jpg" alt="">
 										</a>
 									</div>
 								</div>
@@ -218,7 +177,7 @@
 							<!-- comment -->
 							<div class="media">
 								<div class="media-left">
-									<img src="./img/avatar.png" alt="">
+									<img src="images/avatar.png" alt="">
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
@@ -230,7 +189,7 @@
 								<!-- comment -->
 								<div class="media">
 									<div class="media-left">
-										<img src="./img/avatar.png" alt="">
+										<img src="images/avatar.png" alt="">
 									</div>
 									<div class="media-body">
 										<div class="media-heading">
@@ -247,7 +206,7 @@
 							<!-- comment -->
 							<div class="media">
 								<div class="media-left">
-									<img src="./img/avatar.png" alt="">
+									<img src="images/avatar.png" alt="">
 								</div>
 								<div class="media-body">
 									<div class="media-heading">
@@ -285,42 +244,7 @@
 		<!-- /Blog -->
 
 		<!-- Footer -->
-		<footer id="footer">
-
-			<!-- container -->
-			<div class="container">
-
-				<!-- row -->
-				<div class="row">
-
-					<!-- copyright -->
-					<div class="col-md-6">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						<span class="copyright">Copyright @2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</div>
-					<!-- /copyright -->
-
-					<!-- footer nav -->
-					<div class="col-md-6">
-						<nav class="footer-nav">
-							<a href="index.html">Home</a>
-							<a href="index.html#about">About</a>
-							<a href="index.html#menu">Menu</a>
-							<a href="index.html#reservation">Reservation</a>
-							<a href="index.html#events">Events</a>
-							<a href="index.html#contact">Contact</a>
-						</nav>
-					</div>
-					<!-- /footer nav -->
-
-				</div>
-				<!-- /row -->
-
-			</div>
-			<!-- /container -->
-
-		</footer>
+		
 		<!-- /Footer -->
 
 		<!-- Preloader -->
@@ -337,7 +261,7 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 
 	</body>
 </html>
