@@ -53,6 +53,7 @@ a {
 	max-width: 100%;
   min-height: 480px; 
   margin-left: 350px;
+  margin-bottom: 50px;
 }
 
 .form-container form {
@@ -336,13 +337,13 @@ body{
 }
 /*==========Navbar=============*/
 nav{
-  background: #fff;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   height: 70px;
   padding: 0 50px;
+  border-bottom: 1px solid black;
 }
 nav .logo img{
   width: 150px;
@@ -364,7 +365,7 @@ nav .nav-items li a{
   text-decoration: none;
 }
 nav .nav-items li a:hover{
-  color: #ff3d00;
+  color: #000;
 }
 nav form{
   display: flex;
@@ -379,7 +380,7 @@ nav form .search-data{
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  color: #fff;
+  color: #000;
   font-size: 17px;
   border: none;
   font-weight: 500;
@@ -387,7 +388,7 @@ nav form .search-data{
 }
 nav form button{
   padding: 0 15px;
-  color: #fff;
+  color: #000;
   font-size: 17px;
   background: #fe9801;
   border: none;
@@ -404,7 +405,7 @@ nav .search-icon{
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   display: none;
 }
@@ -504,7 +505,7 @@ nav .search-icon{
 }
 
 nav .logo.space{
-  color: red;
+  color: #f08902;
   padding: 0 5px 0 0;
 }
 @media (max-width: 980px){
@@ -532,8 +533,6 @@ nav .logo.space{
     display:table;
     width: 100%;
     height: 100vh;
-    background: url(images/home-bg.jpg) top center;
-    background-size: cover;
 }
 @media (min-width: 1024px){
     #hero{
@@ -546,7 +545,6 @@ nav .logo.space{
     max-width: 100%;
 }
 #hero .hero-container{
-    background: rgba(0,0,0,0.2);
     display: table-cell;
     margin: 0;
     padding:0;
@@ -566,19 +564,16 @@ nav .logo.space{
         font-size: 28px;
         line-height: 36px;
     }
+    #hero h2{
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 30px;
+  }
 }
 #hero h2{
     color: #fff;
     margin-bottom: 50px;
     font-style: italic;
-}
-@media (max-width: 768px){
-    #hero h2{
-        font-size: 24px;
-        line-height: 26px;
-        margin-bottom: 30px;
-    }
-    
 }
 #hero .actions a{
     text-transform: uppercase;
@@ -1177,12 +1172,20 @@ button:focus{
 }
 
 .event .event-content h3 {
-	margin-top:0px;
+  margin-top:5px;
+  text-transform: uppercase;
+}
+
+.event .event-content p {
+  margin-top:15px;
 }
 
 /*==========End of  event Section===========*/
 
 /*========== blog section===========*/
+.section{
+  background: #f1f1f1;
+}
 .blog-img {
 	position:relative;
 }
@@ -1368,7 +1371,10 @@ button:focus{
 }
 
 .blog-comments .media .media {
-	background-color:#FFF;
+  background-color:#FFF;
+  width: 600px;
+  height: 150px;
+  margin-left: 100px;
 }
 
 .blog-comments .media .media-heading h4 {
@@ -1377,7 +1383,8 @@ button:focus{
 
 /* --- blog reply form --- */
 .blog-reply-form .input {
-	display:block;
+  display:block;
+  height: 40px;
 	max-width:600px;
   margin-bottom:20px;
   border: 1px solid gray;
@@ -1417,7 +1424,6 @@ button:focus{
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background: url(images/background02.jpg) no-repeat;
   background-size: cover;
   overflow: hidden;
   display: flex;
