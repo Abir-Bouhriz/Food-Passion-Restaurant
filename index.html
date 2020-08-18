@@ -7,17 +7,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <!---->
-
     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!-- fonawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
 
     <!-- bootsrap4 cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -30,54 +28,82 @@
 </head>
 
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="images/poster8_8_14147.png" alt="logo" style="width: 100px; height: 50px; margin-right: 25px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!--  Show this only on mobile to medium screens  -->
+          <a class="navbar-brand d-lg-none" href="#">
+              <img src="images/poster8_8_14147 - Copie.png" alt="">
+          </a>
+        
+          <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Special Offers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Event</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Booking</a>
-                </li>
-            </ul>
+          </button>
+        
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+        
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-phone"></i> + 55 123 456</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-envelope"></i> food_passion@gmail.com</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-users" id="forms" class="open-button"
-                            onclick="openForm()" style="margin-right: 25px; cursor: pointer;"> Sign-In / Sign-Up</i></a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
             </ul>
-
-            <!-- <i class="fa fa-users" id="forms" class="open-button" onclick="openForm()" style="margin-right: 25px; cursor: pointer;">  Sign-In / Sign-Up</i>
-            -->
+            
+            
+        <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-lg-block" href="index.html">
+                <img src="images/poster8_8_14147 - Copie.png" alt="">
+            </a>
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">+55 123 456 78</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">food_passion@gmail.com</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  id="forms" onclick="openForm()"></i> Log-In</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  
+  
+  
+    <!--navbar
+    <header>
+		<div class="top">
+			<div class="container">
+				<ul class="lang">
+					<li><a href="#" ><i class="fab fa-facebook-f" style="margin-right: 10px;"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"  style="margin-right: 10px;"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"  style="margin-right: 10px;"></i></a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="#" style="margin-right: 20px;"><i class="fa fa-envelope" style="margin-right: 10px;"></i> food_passion@gmail.com</a></li>
+					<li><a href="#" style="margin-right: 20px;"><i class="fas fa-phone-alt"  style="margin-right: 10px;"></i> +55 123 456 789</a></li>
+					<li><a href="#" style="margin-right: 20px;" id="forms" class="open-button" onclick="openForm()"><i class="fa fa-users user" style="margin-right: 10px;"></i> Log-In</a></li>
+				</ul>
+			</div>
         </div>
-    </nav>
+    </header>
+    -->
+       
     <!--end of navbar-->
 
-    <!--search bar-->
+    <!--search bar
     <section class="search-bar">
         <div class="container">
             <div class="row">
@@ -85,10 +111,8 @@
                     <form action="">
                         <div>
                             <div class="input-group">
-                                <input type="search" placeholder="Search for Menu Images, Events & Special Offers"
-                                    class="form-control">
+                                <input type="search" placeholder="Search for Menu Images, Events & Special Offers" class="form-control">
                                 <div class="input-group-append">
-                                    <!-- Example single danger button -->
                                     <div class="input-group-append">
                                         <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
                                     </div>

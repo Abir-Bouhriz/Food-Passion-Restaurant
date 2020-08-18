@@ -248,7 +248,7 @@ button.ghost {
 .containerr.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
-
+/*
 .open-button {
   color: #000;
   cursor: pointer;
@@ -259,7 +259,7 @@ button.ghost {
   height: 41px;
   line-height: 40px;
 }
-
+*/
 .form-popup {
   display: none;
   position: fixed;
@@ -338,24 +338,38 @@ body{
     color:#fff;
 }
 /*==========Navbar=============*/
-nav .navbar{
-  position: absolute;
-  background: transparent;
-  width: 100%;
-  z-index: 10;
-  border-bottom: 1px solid #000;
-}
+
 .search-bar{
   position: absolute;
   z-index: 1;
   top: 100px;
   width: 100%;
 }
-.navbar .nav-link{
+.input-group.form-control:focus{
+  box-shadow: none;
+}
+.navbar{
+  background: #f8b34b;
+  height: 65px;
+}
+#navbarToggle ul li a{
+  color: #000;
+  font-size: 20px;
+  font-family: 'Times New Roman', cursive;
+  margin-right: 35px;
+}
+
+#navbarToggle ul li a:hover{
   color: #fff;
 }
+.navbar .navbar-brand img{
+  height: 70px;
+  width: 70px;
+}
+
 /*========End of Navbar===========*/
-/*==========Hero Section===========*/
+
+/*==========Home Section===========*/
 
 .load{
   animation: slider 2s;
@@ -383,7 +397,7 @@ nav .navbar{
   position: absolute;
   letter-spacing: 3px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 70px;
 }
 
 .principal h1{
