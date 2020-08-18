@@ -6,46 +6,118 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-   
-        <!---->
-       <!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+
+
+    <!---->
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-		
-		<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 
-		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/main.css"/>
-        <!---->
+    <!-- fonawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- bootsrap4 cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+
+
 </head>
 
 <body>
-    <nav>
-        <div class="menu-icon">
-  <span class="fas fa-bars"></span></div>
-  <div class="logo"><img src="images/poster8_8_14147.png" alt=""></div>
-  <div class="nav-items">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="#take-away">Special Offer</a></li>
-  <li><a href="#our-menu">Our Menu</a></li>
-  <li><a href="#events">Events</a></li>
-  <li><a href="#reserve">Booking</a></li>
-  </div>
-  <div class="search-icon">
-  <span class="fas fa-search"></span></div>
-  <div class="cancel-icon">
-  <span class="fas fa-times"></span></div>
-  <form action="#">
-          <input type="search" class="search-data" placeholder="Search" required>
-          <button type="submit" class="fas fa-search"></button>
-        </form>
-  </nav>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/poster8_8_14147.png" alt="logo" style="width: 100px; height: 50px; margin-right: 25px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <button id="forms" class="open-button" onclick="openForm()">Sign-In / Sign-Up</button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Special Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Booking</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-phone"></i> + 55 123 456</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-envelope"></i> food_passion@gmail.com</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-users" id="forms" class="open-button"
+                            onclick="openForm()" style="margin-right: 25px; cursor: pointer;"> Sign-In / Sign-Up</i></a>
+                </li>
+            </ul>
+
+            <!-- <i class="fa fa-users" id="forms" class="open-button" onclick="openForm()" style="margin-right: 25px; cursor: pointer;">  Sign-In / Sign-Up</i>
+            -->
+        </div>
+    </nav>
+    <!--end of navbar-->
+
+    <!--search bar-->
+    <section class="search-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <form action="">
+                        <div>
+                            <div class="input-group">
+                                <input type="search" placeholder="Search for Menu Images, Events & Special Offers"
+                                    class="form-control">
+                                <div class="input-group-append">
+                                    <!-- Example single danger button -->
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end of serach bar-->
+
+    <!--carousel-->
+    <div class="slider">
+        <div class="load"></div>
+        <div class="contents">
+            <div class="principal">
+                <h1 style="font-family: 'Great Vibes' , cursive;" class="font-weight-bold">Food Passion</h1>
+                <h2 style="font-family: 'Dancing Script', cursive;" class="font-weight-bold">Healthy Food, Happy Mood</h2>
+                <div class="actions">
+                    <a href="#" class="btn-get-started bg-warning">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--end of carousel-->
 
     <div class="form-popup" id="myForm">
         <div class="containerr" id="container">
@@ -96,7 +168,7 @@
         </div>
         <button type="button" class="btn cancel" onclick="closeForm()">&#215</button>
     </div>
-    <!---Hero Section-->
+    <!---Hero Section
     <section id="hero" style="background: url(images/home-bg.jpg); 
     background-size: cover;">
         <div class="hero-container">
@@ -450,7 +522,7 @@
                             <div class="event-content">
                                 <p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
                                 <h3><a href="blog.html">te vero tritani iuvaret vis.
-                                        </a></h3>
+                                    </a></h3>
                                 <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu.
                                     Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
                             </div>
@@ -573,11 +645,6 @@
                         <span>Name</span>
                     </div>
                     <div class="input-container">
-                        <input type="email" name="email" class="input" />
-                        <label for="">Email</label>
-                        <span>Email</span>
-                    </div>
-                    <div class="input-container">
                         <input type="tel" name="phone" class="input" />
                         <label for="">Phone</label>
                         <span>Phone</span>
@@ -599,7 +666,7 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                          </select>
+                        </select>
                     </div>
                     <div class="input-container textarea">
                         <textarea name="message" class="input"></textarea>
@@ -656,25 +723,20 @@
         }
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9//umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 
 
 
     <!-- Jquery js -->
-    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <!-- Mixitup js -->
     <script src="js/mixitup.min.js" type="text/javascript"></script>
     <!-- Active js -->
     <script src="js/active.js" type="text/javascript"></script>
+    <script src="script.js"></script>
 
 
 
