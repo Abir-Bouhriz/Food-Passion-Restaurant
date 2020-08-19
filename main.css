@@ -349,14 +349,14 @@ body{
   box-shadow: none;
 }
 .navbar{
-  background: #f8b34b;
+  background: #f08902;
   height: 65px;
 }
 #navbarToggle ul li a{
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Times New Roman', cursive;
-  margin-right: 35px;
+  margin-right: 15px;
 }
 
 #navbarToggle ul li a:hover{
@@ -365,6 +365,22 @@ body{
 .navbar .navbar-brand img{
   height: 70px;
   width: 70px;
+}
+@media (max-width: 991px){
+  .collapse{
+    background: #eee;
+    text-align: center;
+    z-index: 999;
+  }
+  .collapse ul li{
+    border: 1px solid black;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .collapse ul li a:hover{
+    color: #f08902;
+  }
 }
 
 /*========End of Navbar===========*/
@@ -449,7 +465,7 @@ body{
 }
 
 @media (min-width: 1024px){
-    .container1{
+    .slider{
         background-attachment: fixed;
     }
 }
