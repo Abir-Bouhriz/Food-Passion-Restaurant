@@ -353,14 +353,14 @@ body{
   height: 65px;
 }
 #navbarToggle ul li a{
-  color: #000;
+  color: #fff;
   font-size: 18px;
   font-family: 'Times New Roman', cursive;
   margin-right: 15px;
 }
 
 #navbarToggle ul li a:hover{
-  color: #fff;
+  color: #000;
 }
 .navbar .navbar-brand img{
   height: 70px;
@@ -506,84 +506,107 @@ body{
     font-style: italic;
 }
 /*==========End of Hero Section===========*/
-/* Shop Topbar */
-.shop .shop-top {
-	clear: both;
-	background: #f6f7fb;
-	padding: 18px 20px 50px 20px;
+/*============== our services========= */
+.containeer{
+  padding: 0 100px;
 }
-.shop .shop-shorter {
-	float: left;
+.material{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.shop .single-shorter {
-	display: inline-block;
-	margin-right: 10px;
+.conteent h1{
+  margin-top: 200px;
+  color: #fe9801;
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
 }
-.shop .single-shorter:last-child{
-	margin:0;
+.conteent p{
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  max-width: 500px;
+  font-size: 1.2rem;
 }
-.shop .single-shorter label {
-	display: inline-block;
-	float: left;
-	margin: 4px 5px 0 0;
-	font-weight:500;
+.conteent a{
+  background: #333;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 10px 35px;
+  position: absolute;
 }
-.shop .single-shorter option{}
-.shop .nice-select {
-	clear: initial;
-	display: inline-block;
-	margin: 0;
-	border: 1px solid #e6e6e6;
-	border-radius: 0px;
-	height: auto;
-	width: auto;
-	border-radius: 0px;
+.wrapperr{
+  overflow: hidden;
 }
-.shop .nice-select::after{
-	border-color:#888;
+.features{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.shop .nice-select .list {
-	border-radius:0px;
+.features-group-2{
+  margin-left: 40px;
+  margin-top: 50px;
+  padding-bottom: 40px;
 }
-.shop .nice-select .option.selected {
-	font-weight: 500;
+.feature-1, .feature-2, .feature-3, .feature-4{
+  max-width: 250px;
+  box-shadow: 0 .2rem 3rem rgba(0,0,0,0.09);
+  padding: 20px;
+  background-color: #fff;
 }
-.shop .nice-select .list li{
-	color:#666;
-	border-radius:0px;
+.feature-2{
+  margin-top: 20px;
 }
-.shop .nice-select .list li:hover{
-	background:#F7941D;
-	color:#fff;
+.feature-4{
+  margin-top: 20px;
 }
-.shop .view-mode {
-	float: right;
+.features img{
+  width: 140px;
+  filter: drop-shadow(0, .1rem, .2rem, rgba(0,0,0,0.35));
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
 }
-.shop .view-mode li {
-	display: inline-block;
-	margin-right: 5px;
+.features h2{
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 35px 0 15px 0;
+  color: #333;
 }
-.shop .view-mode li:last-child{
-	margin:0;
+.features p{
+  font-size: 0.8rem;
+  text-align: center;
+  color: #555;
+  line-height: 1.5;
 }
-.shop .view-mode li a {
-	width: 43px;
-	height: 32px;
-	background: transparent;
-	border: 1px solid #77777775;
-	text-align: center;
-	display: block;
-	line-height: 32px;
-	color: #888;
-	border-radius: 0px;
+.bg-img-1{
+  width: 350px;
+  position: absolute;
+  top: 300px;
+  left: -200px;
+  z-index: -1;
+  animation: bubble 35s linear infinite;
 }
-.shop .view-mode li.active a,
-.shop .view-mode li:hover a {
-	background: #F7941D;
-	color:#fff;
-	border-color:transparent;
+@keyframes bubble{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
 }
-
+.bg-img-1{
+  width: 300px;
+  position: absolute;
+  top: -20px;
+  right: -150px;
+  z-index: -1;
+  animation: bubble 35s linear infinite;
+}
+/*============== end of our services========= */
 
 
 /*==========Product  Section===========*/
@@ -829,6 +852,11 @@ button:focus{
 
 
 /*==========End of menu Section===========*/
+
+
+/*========== call us===========*/
+
+/*========== end of call us===========*/
 
 /*========== Team  Section===========*/
 .team-area{
