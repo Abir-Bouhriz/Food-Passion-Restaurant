@@ -666,10 +666,15 @@
     <div id="reserve" class="container1" style="background: url(images/reserve.jpg);">
         <div class="form">
             <div class="contact-info">
-                <h3 class="title">Let's get in touch</h3>
+                <h3 class="title">TIME OPEN</h3>
                 <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                    dolorum adipisci recusandae praesentium dicta!
+                    Monday - Friday <br> 7am - 11am (Breakfast) <br> 11am - 10pm (Lunch / Dinner)
+                </p>
+                <p class="text">
+                    Sturday & Sunday <br> 9am - 1pm (Breakfast) <br> 1pm - 10pm (Lunch / Dinner)
+                </p>
+                <p class="text">
+                    Call Us <br> +55 123 456 789
                 </p>
 
                 <div class="info">
@@ -710,23 +715,28 @@
                 <form action="index.html" autocomplete="off">
                     <h3 class="title">Reservation</h3>
                     <div class="input-container">
-                        <input type="text" name="name" class="input" />
+                        <input type="text" name="name" class="input" required />
                         <label for="">Name</label>
                         <span>Name</span>
                     </div>
                     <div class="input-container">
-                        <input type="tel" name="phone" class="input" />
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" required />
                         <label for="">Phone</label>
                         <span>Phone</span>
                     </div>
                     <div class="input-container">
-                        <input class="date-picker input" type="date" />
+                        <input class="date-picker input" type="date" required/>
                     </div>
                     <div class="input-container">
-                        <input class="input" type="time" id="appt" name="appt">
+                        <input class="input" type="time" id="appt" name="appt" required>
                     </div>
                     <div class="input-container">
-                        <select id="cars" class="input1" name="carlist" form="carform">
+                        <select id="cars" class="input1" name="carlist" form="carform" required>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
