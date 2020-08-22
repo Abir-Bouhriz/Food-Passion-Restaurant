@@ -1,152 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<head>
-    <title>Food Passion</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Food Passion Restaurant</title>
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+		 <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Owl Carousel -->
+		<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+		<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- fonawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-    <!-- bootsrap4 cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="main.css">
+    </head>
+	<body>
 
+		<!-- Header -->
+		<header id="header">
 
-</head>
+			<!-- Top nav -->
+			<div id="top-nav">
+				<div class="container">
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+				<!-- logo -->
+				<div class="logo">
+					<a href="index.html"><img src="./images/logo1.png" alt="logo"></a>
+				</div>
+				<!-- logo -->
 
-        <!--  Show this only on mobile to medium screens  -->
-          <a class="navbar-brand d-lg-none" href="#">
-              <img src="images/poster8_8_14147 - Copie.png" alt="">
-          </a>
-        
-          <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-        <!--  Use flexbox utility classes to change how the child elements are justified  -->
-          <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-        
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Offer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Booking</a>
-              </li>
-            </ul>
-            
-            
-        <!--   Show this only lg screens and up   -->
-            <a class="navbar-brand d-none d-lg-block" href="index.html">
-                <img src="images/poster8_8_14147 - Copie.png" alt="">
-            </a>
-            
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-phone" style="margin-right: 5px;"></i> +55 123 456 78</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-envelope" style="margin-right: 5px;"></i> food_passion@gmail.com</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"  id="forms" onclick="openForm()"><i class="fa fa-users" style="margin-right: 5px;"></i> Log-In</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-  
-  
-  
-    <!--navbar
-    <header>
-		<div class="top">
-			<div class="container">
-				<ul class="lang">
-					<li><a href="#" ><i class="fab fa-facebook-f" style="margin-right: 10px;"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"  style="margin-right: 10px;"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"  style="margin-right: 10px;"></i></a></li>
+				<!-- Mobile toggle -->
+				<button class="navbar-toggle">
+					<span></span>
+				</button>
+				<!-- Mobile toggle -->
+
+				<!-- social links -->
+				<ul class="social-nav">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 				</ul>
-				<ul class="social">
-					<li><a href="#" style="margin-right: 20px;"><i class="fa fa-envelope" style="margin-right: 10px;"></i> food_passion@gmail.com</a></li>
-					<li><a href="#" style="margin-right: 20px;"><i class="fas fa-phone-alt"  style="margin-right: 10px;"></i> +55 123 456 789</a></li>
-					<li><a href="#" style="margin-right: 20px;" id="forms" class="open-button" onclick="openForm()"><i class="fa fa-users user" style="margin-right: 10px;"></i> Log-In</a></li>
-				</ul>
+				<!-- /social links -->
+
+				</div>
 			</div>
-        </div>
-    </header>
-    -->
-       
-    <!--end of navbar-->
+			<!-- /Top nav -->
 
-    <!--search bar
-    <section class="search-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <form action="">
-                        <div>
-                            <div class="input-group">
-                                <input type="search" placeholder="Search for Menu Images, Events & Special Offers" class="form-control">
-                                <div class="input-group-append">
-                                    <div class="input-group-append">
-                                        <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
-                                    </div>
-                                </div>
+			<!-- Bottom nav -->
+			<div id="bottom-nav">
+				<div class="container">
+				<nav id="nav">
 
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--end of serach bar-->
+					<!-- nav -->
+					<ul class="main-nav nav navbar-nav">
+						<li><a href="index.html" class="current">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="index.html#menu">Menu</a></li>
+						<li><a href="index.html#reservation">Reservation</a></li>
+						<li><a href="blog.html">Events</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+					<!-- /nav -->
 
-    <!--carousel-->
-    <div class="slider">
-        <div class="load"></div>
-        <div class="contents">
-            <div class="principal">
-                <h1 style="font-family: 'Great Vibes' , cursive;" class="font-weight-bold">Food Passion</h1>
-                <h2 style="font-family: 'Dancing Script', cursive;" class="font-weight-bold">Healthy Food, Happy Mood</h2>
-                <div class="actions">
-                    <a href="#" class="btn-get-started bg-warning">Order Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!--end of carousel-->
-
-    <div class="form-popup" id="myForm">
+					<!-- button nav -->
+					<ul class="cta-nav">
+						<li><a href="#" id="forms" onclick="openForm()" class="main-button">Log-In</a></li>
+					</ul>
+					<div class="form-popup" id="myForm">
         <div class="containerr" id="container">
             <div class="form-container sign-up-container">
                 <form action="#">
@@ -195,22 +141,46 @@
         </div>
         <button type="button" class="btn cancel" onclick="closeForm()">&#215</button>
     </div>
-    <!---Hero Section
-    <section id="hero" style="background: url(images/home-bg.jpg); 
-    background-size: cover;">
-        <div class="hero-container">
-            <div class="hero-logo">
-                <h1 style="font-family: 'Great Vibes' , cursive;" class="font-weight-bold">Food Passion</h1>
-            </div>
-            <h2 style="font-family: 'Dancing Script', cursive;" class="font-weight-bold">Healthy Food, Happy Mood</h2>
-            <div class="actions">
-                <a href="#" class="btn-get-started bg-warning">Order Now</a>
-            </div>
-        </div>
-    </section>
-    <!---End of Hero Section-->
+					<!-- button nav -->
 
-    <!------ our services------->
+					<!-- contact nav -->
+					<ul class="contact-nav nav navbar-nav">
+						<li><a href="tel:0455481497"><i class="fa fa-phone"></i> +55 123 456 78</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> 3685 Granville Lane</a></li>
+					</ul>
+					<!-- contact nav -->
+
+				</nav>
+				</div>
+			</div>
+			<!-- /Bottom nav -->
+
+
+		</header>
+		<!-- /Header -->
+
+		<!-- Home -->
+		<div id="home" class="banner-area">
+
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./images/background02.jpg)"></div>
+			<!-- /Backgound Image -->
+
+			<div class="home-wrapper">
+
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<div class="home-content">
+						<h1 class="white-text" style="font-family: 'Dancing Script', cursive;">Welcome To <br> Food Passion Restaurant</h1>
+						<h4 class="white-text lead">Healthy Food, Happy Mood</h4>
+						<a href="index.html#menu"><button class="main-button">Discover Menu</button></a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- /Home -->
+<!------ our services------->
     <div class="wrapperr">
         <div class="containeer">
             <div class="material">
@@ -222,24 +192,24 @@
                 <div class="features">
                     <div class="features-group-1">
                         <div class="feature-1">
-                            <img src="images/best chef.png" alt="">
+                            <img src="./images/best.png" alt="">
                             <h2>Best Chefs</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, molestiae.</p>
                         </div>
                         <div class="feature-2">
-                            <img src="images/fast delivery.png" alt="">
+                            <img src="./images/fast.png" alt="">
                             <h2>Fast Delivery</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, molestiae.</p>
                         </div>
                     </div>
                     <div class="features-group-2">
                         <div class="feature-3">
-                            <img src="images/fresh food.png" alt="">
+                            <img src="./images/fresh.png" alt="">
                             <h2>Fresh Food</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, molestiae.</p>
                         </div>
                         <div class="feature-4">
-                            <img src="images/support.png" alt="">
+                            <img src="./images/support.png" alt="">
                             <h2>24Hr Support</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, molestiae.</p>
                         </div>
@@ -249,14 +219,13 @@
         </div>
     </div>
     <!-------end of our services------->
-
-
-    <!--Product Section-->
+	
+	 <!--Product Section-->
     <section id="take-away" class="product-section bg-img py-3">
         <div class="container">
             <div class=" row justify-content-center pb-5">
                 <div class="col-md-7 heading-section text-center">
-                    <h2 style="font-family: 'Dancing Script', cursive;" class="font-weight-bold text-color glow">
+                    <h2 style="font-family: 'Dancing Script', cursive; margin-bottom: 35px; margin-top: 45px;" class="font-weight-bold text-color glow">
                         Our Great Offer For Clients
                     </h2>
                 </div>
@@ -266,7 +235,7 @@
                 <div class="col-md-3 d-flex">
                     <div class="product glow">
                         <div class="img d-flex align-items-center justify-content-center"
-                            style="background-image:url(images/p1.jpg); background-size: cover;">
+                            style="background-image:url(./images/p1.jpg); background-size: cover;">
                             <div class="icons">
                                 <p class="icon-block d-flex">
                                     <a href="#" class="d-flex align-items-center justify-content-center">
@@ -294,7 +263,7 @@
                 <div class="col-md-3 d-flex">
                     <div class="product glow">
                         <div class="img d-flex align-items-center justify-content-center"
-                            style="background-image:url(images/s3.jpg); background-size: cover;">
+                            style="background-image:url(./images/s3.jpg); background-size: cover;">
                             <div class="icons">
                                 <p class="icon-block d-flex">
                                     <a href="#" class="d-flex align-items-center justify-content-center">
@@ -322,7 +291,7 @@
                 <div class="col-md-3 d-flex">
                     <div class="product glow">
                         <div class="img d-flex align-items-center justify-content-center"
-                            style="background-image:url(images/p3.jpg); background-size: cover;">
+                            style="background-image:url(./images/p3.jpg); background-size: cover;">
                             <div class="icons">
                                 <p class="icon-block d-flex">
                                     <a href="#" class="d-flex align-items-center justify-content-center">
@@ -350,7 +319,7 @@
                 <div class="col-md-3 d-flex">
                     <div class="product glow">
                         <div class="img d-flex align-items-center justify-content-center"
-                            style="background-image:url(images/s2.jpg); background-size: cover;">
+                            style="background-image:url(./images/s2.jpg); background-size: cover;">
                             <div class="icons">
                                 <p class="icon-block d-flex">
                                     <a href="#" class="d-flex align-items-center justify-content-center">
@@ -377,11 +346,12 @@
             </div>
     </section>
     <!--End of Product Section-->
+		
 
-    <!--menu-->
+		<!--menu-->
 
     <!-- Main area start -->
-    <section id="our-menu" class="portfolio-area">
+    <section id="menu" class="portfolio-area">
         <h2 style="font-family: 'Dancing Script', cursive;">Food Passion Menu</h2>
         <div class="controls">
             <button type="button" data-filter="all">All</button>
@@ -392,7 +362,7 @@
         <div class="portfolio-item">
             <div class="single-item mix pizza">
                 <div class="img-thumbnail">
-                    <img src="images/pizza1.png" alt="">
+                    <img src="./images/pizza1.png" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Pizza 1</h2>
@@ -401,7 +371,7 @@
             </div>
             <div class="single-item mix plat">
                 <div class="img-thumbnail">
-                    <img src="images/p1.jpg" alt="">
+                    <img src="./images/p1.jpg" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Plat 1</h2>
@@ -410,7 +380,7 @@
             </div>
             <div class="single-item mix pizza">
                 <div class="img-thumbnail">
-                    <img src="images/pizza2.png" alt="">
+                    <img src="./images/pizza2.png" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Pizza 2</h2>
@@ -419,7 +389,7 @@
             </div>
             <div class="single-item mix plat">
                 <div class="img-thumbnail">
-                    <img src="images/p2.jpg" alt="">
+                    <img src="./images/p2.jpg" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Plat 2</h2>
@@ -428,7 +398,7 @@
             </div>
             <div class="single-item mix pizza">
                 <div class="img-thumbnail">
-                    <img src="images/pizza3.png" alt="">
+                    <img src="./images/pizza3.png" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Pizza 3</h2>
@@ -437,7 +407,7 @@
             </div>
             <div class="single-item mix sandwich">
                 <div class="img-thumbnail">
-                    <img src="images/s1.jpg" alt="">
+                    <img src="./images/s1.jpg" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Sandwich 1</h2>
@@ -446,7 +416,7 @@
             </div>
             <div class="single-item mix sandwich">
                 <div class="img-thumbnail">
-                    <img src="images/s2.jpg" alt="">
+                    <img src="./images/s2.jpg" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Sandwich 2</h2>
@@ -455,7 +425,7 @@
             </div>
             <div class="single-item mix plat">
                 <div class="img-thumbnail">
-                    <img src="images/p3.jpg" alt="">
+                    <img src="./images/p3.jpg" alt="">
                 </div>
                 <div class="img-content">
                     <h2>Plat 3</h2>
@@ -467,331 +437,321 @@
     <!-- Main area End -->
     <!--end of menu-->
 
-    <!----call us----->
-    
-    <!--end of call us-->
 
-    <!---Team Section-->
-    <section class="team-area">
-        <h2 style="font-family: 'Dancing Script', cursive;">Meet Our Chefs</h2>
-        <div class="container">
-            <div class="row">
+		<!-- Reservation -->
+		<div id="reservation" class="section">
 
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="images/chef.jfif" alt="team member" class="img-responsive">
-                        </div>
-                        <div class="team-hover">
-                            <div class="desk">
-                                <h4>Hi There !</h4>
-                                <p>I love to introduce myself as a professional chef.</p>
-                            </div>
-                            <div class="s-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-title">
-                        <h5>Martin Smith</h5>
-                        <span>Senior &amp; Head Chef</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="images/chef.jfif" alt="team member" class="img-responsive">
-                        </div>
-                        <div class="team-hover">
-                            <div class="desk">
-                                <h4>Hello World !</h4>
-                                <p>I love to introduce myself as a professional chef.</p>
-                            </div>
-                            <div class="s-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-title">
-                        <h5>Franklin Harbet</h5>
-                        <span>Senior Chef</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="team-img">
-                            <img src="images/chef.jfif" alt="team member" class="img-responsive">
-                        </div>
-                        <div class="team-hover">
-                            <div class="desk">
-                                <h4>Hello World !</h4>
-                                <p>I love to introduce myself as a professional chef.</p>
-                            </div>
-                            <div class="s-link">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-title">
-                        <h5>Linda Anderson</h5>
-                        <span>Senior Chef</span>
-                    </div>
-                </div>
+			<!-- Backgound Image -->
+			<div class="bg-image" style="background-image:url(./images/background03.jpg)"></div>
+			<!-- /Backgound Image -->
 
-            </div>
+			<!-- container -->
+			<div class="container">
 
-        </div>
-    </section>
-    <!--- End of Team Section-->
+				<!-- row -->
+				<div class="row">
 
-    <!--- Filler Section--
-    <section id="subscribe" class="py-5">
-        <div class="container">
-            <div class="row align-items-center my-5">
-                <div class="col-sm-10 mx-auto-text-center mb-5">
-                    <h4 class="display-3 mb-5 text-uppercase text-white text-center">
-                        Subscribe For More Offers
-                    </h4>
-                    <form class="form-inline d-flex justify-content-center">
-                        <input type="text" class="form-control w-35" placeholder="Email">
-                        <button class="btn form-btn m-1">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    - End of filler Section-->
+					<!-- reservation form -->
+					<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
+						<form class="reserve-form row">
+							<div class="section-header text-center">
+								<h4 class="sub-title">Reservation</h4>
+								<h2 class="title white-text">Book Your Table</h2>
+							</div>
 
-    <!---------event Section-->
-    <section id="events" class="event-section">
-        <h2 style="font-family: 'Dancing Script', cursive;">Upcoming Event</h2>
-        <!-- Events -->
-        <div class="section">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input class="input" type="text" placeholder="Name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone:</label>
+									<input class="input" type="tel" placeholder="Phone" id="phone">
+								</div>
+								<div class="form-group">
+									<label for="date">Date:</label>
+									<input class="date-picker input" type="date" required>
+								</div>
+							</div>
 
-            <!-- container -->
-            <div class="container">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input class="input" type="email" placeholder="Email" id="email">
+								</div>
+								<div class="form-group">
+									<label for="number">Number of Guests:</label>
+									<select class="input" id="number">
+										<option>1 Person</option>
+										<option>2 People</option>
+										<option>3 People</option>
+										<option>4 People</option>
+										<option>5 People</option>
+										<option>6 People</option>
+									</select>
+								</div>
+								<div class="form-group">
+								  <label for="time">Time:</label>
+								  <input class="input" type="time" id="appt" name="appt" required>
+								</div>
+							</div>
 
-                <!-- row -->
-                <div class="row">
+							<div class="col-md-12 text-center">
+								<button class="main-button">Book Now</button>
+							</div>
 
-                    <!-- single event -->
-                    <div class="col-md-6">
-                        <div class="event">
-                            <div class="event-img">
-                                <img src="images/event01.jpg" alt="">
-                                <div class="event-day">
-                                    <span>08<br>July</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
-                                <h3><a href="blog.html">te vero tritani iuvaret vis.
-                                    </a></h3>
-                                <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu.
-                                    Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single event -->
+						</form>
+					</div>
+					<!-- /reservation form -->
 
-                    <!-- single event -->
-                    <div class="col-md-6">
-                        <div class="event">
-                            <div class="event-img">
-                                <img src="images/event02.jpg" alt="">
-                                <div class="event-day">
-                                    <span>08<br>July</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
-                                <h3><a href="#">te vero tritani iuvaret vis. </a></h3>
-                                <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu.
-                                    Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single event -->
+					<!-- opening time -->
+					<div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+						<div class="opening-time row">
+							<div class="section-header text-center">
+								<h2 class="title white-text">Opening Time</h2>
+							</div>
+							<ul>
+								<li>
+									<h4 class="day">Sunday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Monday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Tuesday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Wednesday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Thursday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Friday</h4>
+									<h4 class="hours">Closed</h4>
+								</li>
+								<li>
+									<h4 class="day">Saturday</h4>
+									<h4 class="hours">Closed</h4>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /opening time -->
 
-                    <!-- single event -->
-                    <div class="col-md-6">
-                        <div class="event">
-                            <div class="event-img">
-                                <img src="images/event02.jpg" alt="">
-                                <div class="event-day">
-                                    <span>08<br>July</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
-                                <h3><a href="#">te vero tritani iuvaret vis. </a></h3>
-                                <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu.
-                                    Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single event -->
+				</div>
+				<!-- /row -->
 
-                    <!-- single event -->
-                    <div class="col-md-6">
-                        <div class="event">
-                            <div class="event-img">
-                                <img src="images/event01.jpg" alt="">
-                                <div class="event-day">
-                                    <span>08<br>July</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
-                                <h3><a href="#">te vero tritani iuvaret vis. </a></h3>
-                                <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu.
-                                    Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /single event -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of event Section-->
+			</div>
+			<!-- /container -->
 
-    <!---Contact Form-->
-    <div id="reserve" class="container1" style="background: url(images/reserve.jpg);">
-        <div class="form">
-            <div class="contact-info">
-                <h3 class="title">TIME OPEN</h3>
-                <p class="text">
-                    Monday - Friday <br> 7am - 11am (Breakfast) <br> 11am - 10pm (Lunch / Dinner)
-                </p>
-                <p class="text">
-                    Sturday & Sunday <br> 9am - 1pm (Breakfast) <br> 1pm - 10pm (Lunch / Dinner)
-                </p>
-                <p class="text">
-                    Call Us <br> +55 123 456 789
-                </p>
+		</div>
+		<!-- /Reservation -->
 
-                <div class="info">
-                    <div class="information">
-                        <img src="images/location.png" class="icon" alt="" />
-                        <p>92 Cherry Drive Uniondale, NY 11553</p>
-                    </div>
-                    <div class="information">
-                        <img src="images/email.png" class="icon" alt="" />
-                        <p>food_passion@gmail.com</p>
-                    </div>
-                    <div class="information">
-                        <img src="images/phone.png" class="icon" alt="" />
-                        <p>+55 61 0123 456</p>
-                    </div>
-                </div>
+		<!-- Events -->
+		<div id="events" class="section">
 
-                <div class="social-media">
-                    <p>Follow Us :</p>
-                    <div class="social-icons">
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+			<!-- container -->
+			<div class="container">
 
-            <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
+				<!-- row -->
+				<div class="row">
 
-                <form action="index.html" autocomplete="off">
-                    <h3 class="title">Reservation</h3>
-                    <div class="input-container">
-                        <input type="text" name="name" class="input" required />
-                        <label for="">Name</label>
-                        <span>Name</span>
-                    </div>
-                    <div class="input-container">
-                        <input type="email" name="email" class="input" />
-                        <label for="">Email</label>
-                        <span>Email</span>
-                    </div>
-                    <div class="input-container">
-                        <input type="tel" name="phone" class="input" required />
-                        <label for="">Phone</label>
-                        <span>Phone</span>
-                    </div>
-                    <div class="input-container">
-                        <input class="date-picker input" type="date" required/>
-                    </div>
-                    <div class="input-container">
-                        <input class="input" type="time" id="appt" name="appt" required>
-                    </div>
-                    <div class="input-container">
-                        <select id="cars" class="input1" name="carlist" form="carform" required>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                    </div>
-                    <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Any Special Orders</label>
-                        <span>Message</span>
-                    </div>
-                    <input type="submit" value="Send" class="btn" />
-                </form>
-            </div>
-        </div>
-    </div>
+					<!-- section header -->
+					<div class="section-header text-center">
+						<h4 class="sub-title">Special Event</h4>
+						<h2 class="title">Upcoming Event</h2>
+					</div>
+					<!-- /section header -->
 
-    <!--end of Contact Form-->
-    <!--footer-->
+					<!-- single event -->
+					<div class="col-md-6">
+						<div class="event">
+							<div class="event-img">
+								<img src="./images/event01.jpg" alt="">
+								<div class="event-day">
+									<span>08<br>July</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
+								<h3><a href="blog.html">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>
+								<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /single event -->
 
-    <!--end of footer-->
+					<!-- single event -->
+					<div class="col-md-6">
+						<div class="event">
+							<div class="event-img">
+								<img src="./images/event02.jpg" alt="">
+								<div class="event-day">
+									<span>08<br>July</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
+								<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>
+								<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /single event -->
 
+					<!-- single event -->
+					<div class="col-md-6">
+						<div class="event">
+							<div class="event-img">
+								<img src="./images/event02.jpg" alt="">
+								<div class="event-day">
+									<span>08<br>July</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
+								<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>
+								<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /single event -->
 
+					<!-- single event -->
+					<div class="col-md-6">
+						<div class="event">
+							<div class="event-img">
+								<img src="./images/event01.jpg" alt="">
+								<div class="event-day">
+									<span>08<br>July</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>
+								<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>
+								<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+							</div>
+						</div>
+					</div>
+					<!-- /single event -->
 
+				</div>
+				<!-- /row -->
 
+			</div>
+			<!-- /container -->
 
+		</div>
+		<!-- /Events -->
 
+		<!-- Contact -->
+		<div id="contact" class="section">
 
+			<!-- container -->
+			<div class="container">
 
+				<!-- row -->
+				<div class="row">
 
+					<div class="col-md-5 col-md-offset-7">
+						<div class="section-header">
+							<h4 class="sub-title">Contact Us</h4>
+							<h2 class="title">Get In Touch</h2>
+						</div>
+						<div class="contact-content">
+							<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
+							<h3>Tel: <a href="#">+55 123 456 78</a></h3>
+							<p>Address: 3685 Granville Lane</p>
+							<p>Email: <a href="#">food_passion@email.com</a></p>
+							<ul class="list-inline">
+								<li><p>Follow Us:</p></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
 
+				</div>
+				<!-- /row -->
 
+			</div>
+			<!-- /container -->
 
+			<!-- map -->
+			<div id="map"></div>
+			<!-- /map -->
 
+		</div>
+		<!-- Contact -->
 
+		<!-- Footer -->
+		<footer id="footer">
 
+			<!-- container -->
+			<div class="container">
 
+				<!-- row -->
+				<div class="row">
 
+					<!-- copyright -->
+					<div class="col-md-6">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<span class="copyright">Copyright @2020 All rights reserved | This template is modified by <a href="https://github.com/Abir-Bouhriz" target="_blank">Abir-Bouhriz</a></span>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
+					<!-- /copyright -->
 
+					<!-- footer nav -->
+					<div class="col-md-6">
+						<nav class="footer-nav">
+							<a href="index.html">Home</a>
+							<a href="about.html">About</a>
+							<a href="index.html#menu">Menu</a>
+							<a href="index.html#reservation">Reservation</a>
+							<a href="blog.html">Events</a>
+							<a href="index.html#contact">Contact</a>
+						</nav>
+					</div>
+					<!-- /footer nav -->
+
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</footer>
+		<!-- /Footer -->
+
+		<!-- Preloader 
+		<div id="preloader">
+			<div class="preloader">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		 /Preloader -->
+
+		<!-- jQuery Plugins -->
+    	<script type="text/javascript" src="js/mixitup.min.js"></script>
+    	<script type="text/javascript" src="js/active.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script type="text/javascript" src="js/google-map.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/script.js"></script>
+		<script src="js/script.js"></script>
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
@@ -803,23 +763,5 @@
         }
     </script>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9//umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-
-
-
-
-    <!-- Jquery js -->
-    <!-- Mixitup js -->
-    <script src="js/mixitup.min.js" type="text/javascript"></script>
-    <!-- Active js -->
-    <script src="js/active.js" type="text/javascript"></script>
-    <script src="script.js"></script>
-
-
-
-</body>
-
+	</body>
 </html>
