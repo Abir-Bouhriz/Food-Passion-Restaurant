@@ -998,6 +998,9 @@ button.cancel:hover{
   }
   
 /*==========End of  Team  Section===========*/
+/*========= testimonial=======*/
+
+/*========end of testimonial =====*/
 
 /*============== our services========= */
 .containeer{
@@ -1447,6 +1450,7 @@ button:focus{
 .reserve-form {
 	padding: 30px 2% 30px;
 	background: rgba(21, 21, 21, 0.9);
+	margin-bottom: 90px;
 }
 
 .reserve-form  .form-group {
