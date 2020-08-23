@@ -1,5 +1,5 @@
 # Food-Passion-Restaurant
- https://abir-bouhriz.github.io/Food-Passion/
+ https://abir-bouhriz.github.io/Food-Passion-Restaurant/
 ## Description:
 A website built in simple HTML and CSS for Food and Restaurant Services.
 ## Tools & languages:
