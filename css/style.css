@@ -1570,27 +1570,75 @@ button:focus{
 /*------------------------------------*\
 	Footer
 \*------------------------------------*/
-#footer {
-	padding-top:40px;
-	padding-bottom:40px;
-	background-color:#151515;
+/* Footer Section CSS */
+.footer_widget{
+	background:url(../images/footerbg.jpg) center top no-repeat scroll;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	overflow: hidden;
+}
+.footer_widget_content{
+	color:#fff;
+}
+.single_widget{
+	padding-bottom: 50px;
+	padding-top:60px;
 }
 
-.footer-nav {
-	text-align:right
+.single_widget h3{
+    font-size:1.875rem;
+	color: #fe9801;
+	font-family: 'Dancing Script', cursive;	
+}
+.single_widget_info p{
+	margin-top:40px;
+}
+.single_widget_info p span{
+	display:block;
+}
+.single_widget_info p span.phone_email{
+	margin-top:15px;
+}
+.footer_socail_icon{
+	margin-top:90px;
+}
+.footer_socail_icon a{
+	padding:5px;
+}
+.footer_socail_icon a i:hover{
+	color: #fff;
+}
+.footer_socail_icon a i{
+	font-size:25px;
+	color:#fe9801;
 }
 
-.footer-nav a {
-	display:inline-block;
-	margin-left:15px;
-	color:#969696;
-	font-size:14px;
-	text-transform:uppercase;
+
+.single_widget_info p span.date_day{
+	margin-top:25px;
+	margin-bottom:15px;
+	font-weight:600;
+}
+.footer{
+	background:#000;
+}
+.footer .copyright p{
+	padding:25px;
+	color:#fff;
+}
+.footer .copyright p i{
+	padding:0px 10px;
+	color:#ff0000;
+}
+.footer .copyright p a{
+	padding:0px 10px;
+	color:#fe9801;
 }
 
-.footer-nav a:hover , .footer-nav a:focus {
-	color:#f36500;
-}
+
 
 /*------------------------------------*\
 	Blog Post
