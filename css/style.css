@@ -31,6 +31,24 @@ Table OF Contents
 	General
 \*------------------------------------*/
 /* --- typography --- */
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+	background: #f36700;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #CC5600;
+}
+
+
+
+
 body {
 	color:#969696;
 	font-size:16px;
@@ -147,18 +165,20 @@ ul,ol{
 .main-button {
 	display:inline-block;
 	padding:15px 30px;
-	border:none;
 	border-radius:40px;
-	background-color:#f36700;
-	color:#FFF;
 	text-transform: uppercase;
 	font-weight: 700;
-	-webkit-transition:0.2s opacity;
-	transition:0.2s opacity;
+    border: 2px solid #f36700;
+    background: transparent;
+	color: wheat;
+	transition: all 0.3s;
 }
 .main-button:hover {
 	color:#FFF;
-	opacity:0.8;
+	background: #f36700;
+}
+.nav-btn{
+	color: #000;
 }
 
 /* --- Inputs --- */
@@ -193,6 +213,7 @@ textarea.input {
 	padding: 10px 15px;
 	background-color: #FFF;
 }
+
 
 #top-nav .logo {
 	float:left;
